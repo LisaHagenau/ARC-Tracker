@@ -29,14 +29,7 @@ shinyServer(function(input, output, session) {
           )
   })
 
-  #observe({
-    #print(input$daterangeInput)
-    #print(input$classInput)
-    #print(input$boatnameInput)
-    #print(summary(filtered()))
-    #print(str(filtered()))
-#})
-  
+
   # create color palette depending on number of selected boats
   marker = reactive({
     list(color = colorRampPalette(brewer.pal(9,"Set1"))(length(unique(filtered()$BoatName))))
@@ -95,9 +88,6 @@ shinyServer(function(input, output, session) {
     allpositions[allpositions$time == input$daterangeInput[2],] %>%
       filter(Class %in% input$classInput)
   })
-  
-  #observe({print(input$daterangeInput)})
-  #observe({attr(allpositions$time, "tzone")})
   
   output$currentstandings <- renderText({
     "Current Ranking"
