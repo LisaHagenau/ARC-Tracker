@@ -1,5 +1,4 @@
-### Reading the files and creating a dataframe containing all the information > allpositions
-### missing: add start position for all boats 
+### Reading the files and creating a dataframe containing all the information > allpositions 
 
 library(plyr)
 library(dplyr)
@@ -13,7 +12,7 @@ library(reshape2)
 library(leaflet)
 
 #  directory with position reports > change to appropriate full path > all other paths are relative
-setwd("D:/documents/ARC_Positionsmeldungen/PosDaten/")
+setwd("C:/directory/with/positions")
 
 # get the data from folder
 file_names <- dir(getwd())
