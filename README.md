@@ -7,3 +7,7 @@ Download the 3 scripts (global.R, server.R, ui.R) to a folder of your liking. Cr
 ```R
 setwd("C:/directory/with/positions")
 ```
+You can run the Tracker from R, which should open a new browser window or tab.
+
+# Offline Map
+I created the offline map using Quantum GIS (for the island contours and weather grid) and Tilemill (to make it look nice). I then used MBUtil (<https://github.com/mapbox/mbutil>) to create the offline map tile folders. 
