@@ -11,3 +11,8 @@ You can run the Tracker from R, which should open a new browser window or tab.
 
 # Offline Map
 I created the offline map using Quantum GIS (for the island contours and weather grid) and Tilemill (to make it look nice). I then used MBUtil (<https://github.com/mapbox/mbutil>) to create the offline map tile folders. 
+
+# To Do
+- [ ] create and upload test data for positions
+- [ ] make and upload a simple offline map (no zoom)
+- [ ] expand on how to create custom offline maps with above mentioned tools
